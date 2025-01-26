@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Umbrella _Corp</title>
+
+        <!-- CSS FILES -->                
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;1,200&family=Unbounded:wght@400;700&display=swap" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+        <link href="css/tooplate-kool-form-pack.css" rel="stylesheet">
+        
+        <style>
+            .hero-section h1 {
+                font-size: 2.5rem;
+                margin-bottom: 1rem;
+            }
+
+            .hero-section .intro-text {
+                font-size: 1.2rem;
+                color: #ffffff;
+                max-width: 600px;
+                margin: 0 auto;
+                text-align: center;
+                line-height: 1.6;
+            }
+
+            .pricing-section {
+                padding: 60px 0;
+                background-color: #1a1a1a;
+                color: #ffffff;
+            }
+
+            .pricing-section h2 {
+                font-size: 2rem;
+                text-align: center;
+                margin-bottom: 40px;
+            }
+
+            .pricing-card {
+                background-color: #2a2a2a;
+                border-radius: 10px;
+                padding: 20px;
+                margin-bottom: 30px;
+                transition: transform 0.3s ease;
+                cursor: pointer; /* Tıklanabilir olduğunu gösterir */
+            }
+
+            .pricing-card:hover {
+                transform: translateY(-10px);
+            }
+
+            .pricing-card h3 {
+                font-size: 1.5rem;
+                margin-bottom: 15px;
+                color: #ffffff;
+            }
+
+            .pricing-card p {
+                font-size: 1rem;
+                color: #cccccc;
+            }
+
+            .pricing-card .price {
+                font-size: 2rem;
+                color: #ffffff;
+                margin-bottom: 20px;
+            }
+
+            .pricing-card ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            .pricing-card ul li {
+                margin-bottom: 10px;
+            }
+
+            .text-blue {
+                color: #007bff; /* Mavi renk */
+            }
+        </style>
+    </head>
+    
+    <body>
+
+        <main>
+
+            <header class="site-header">
+                <div class="container">
+                    <div class="row justify-content-between">
+
+                        <div class="col-lg-12 col-12 d-flex align-items-center">
+                            <a class="site-header-text d-flex justify-content-center align-items-center me-auto" href="index.html">
+                                <i class="bi-box"></i>
+                                <span>
+                                    UMBRELLA _CORP
+                                </span>
+                            </a>
+
+                            <a class="bi-list offcanvas-icon" data-bs-toggle="offcanvas" href="#offcanvasMenu" role="button" aria-controls="offcanvasMenu"></a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+
+            <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">                
+                <div class="offcanvas-header">                    
+                    <button type="button" class="btn-close ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                
+                <div class="offcanvas-body d-flex flex-column justify-content-center align-items-center">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="login.html">Kirala!</a>
+                            </li>
+                            
+                            <li>
+                                <a href="servicesinfo.html">Paketlerimiz</a>
+                            </li>
+
+                            <li>
+                                <a href="lord.html">Ekip Liderlerimiz</a>
+                            </li>
+
+                            <li>
+                                <a href="services.html">Hizmetlerimiz</a>
+                            </li>
+
+                            <li>
+                                <a href="how.html">Nasıl Yapıyoruz?</a>
+                            </li>
+
+                            <li>
+                                <a href="contact.html">İletişim</a>
+                            </li>
+                            
+                            <li>
+                                <a href="livechat.html">Canlı Sohbet</a>
+                            </li>
+                            
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="subscribeModal" tabindex="-1" aria-labelledby="subscribeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+
+                        <div class="modal-body">
+                            <form action="#" method="get" class="custom-form mt-lg-4 mt-2" role="form">
+                                <h2 class="modal-title" id="subscribeModalLabel">Stay up to date</h2>
+                                <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="your@email.com" required="">
+                                <button type="submit" class="form-control">Notify</button>
+                            </form>
+                        </div>
+
+                        <div class="modal-footer justify-content-center">
+                            <p>By signing up, you agree to our Privacy Notice</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-12 mx-auto">
+                            <h1 class="text-white mt-2 mb-4 pb-2">
+                                Fiyatlandırma
+                            </h1>
+
+                            <div class="intro-text">
+                                <p>
+                                    <a class="text-white">Karar vermek için acele etmeyin. İçgüdülerinize güvenin ve bırakın dijital dünyada kirli işlerini biz yapalım!</a>
+                                   <p> <a class="text-orange" id="scrollDown">PAKETLERİ GÖRMEK İÇİN BURAYA BASIN VEYA AŞAĞI KAYDIRIN</a></p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-wrap">
+                    <video autoplay="" loop="" muted="" class="custom-video" poster="">
+                        <source src="videos/video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </section>
+
+
+            <!-- Fiyatlandırma Paketleri Bölümü -->
+            <section class="pricing-section" id="pricingSection">
+                <div class="container">
+                    <h2>Fiyatlandırma Paketleri</h2>
+
+                    <div class="row">
+                        <!-- Paket 1 -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="pricing-card" onclick="window.location.href='login.html';">
+                                <h3><a class="text-white">Basit Paket (Bireylere Yönelik Saldırılar)</a></h3>
+                                <div class="price"><a class="text-green">$250 (İNDİRİM)</a></div>
+                                <ul>
+                                    <li>Canlı Ön ve Arka Kamera Erişimi</li>
+                                    <li>Canlı Ekran Erişimi</li>
+                                    <li>Canlı Dosya Yöneticisi ve Galeri Erişimi</li>
+                                    <li>Canlı Mikrofon Erişimi</li>
+                                    <li>Canlı SMS ve Çağrı Erişimi</li>
+                                    <li>Canlı WhatsApp ve Benzeri Sohbetlere Erişim</li>
+                                    <li>Canlı Lokasyon Erişimi</li>
+                                    <li>Canlı Tuş Vuruşlarına Erişim</li>
+                                    <li>Cihazı Uzaktan Sıfırlama (Hard Reset)</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Paket 2 -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="pricing-card" onclick="window.location.href='login.html';">
+                                <h3><a class="text-white">Profesyonel Paket (Bireylere Yönelik Gelişmiş Saldırılar)</a></h3>
+                                <div class="price"><a class="text-green">$500 (İNDİRİM)</a></div>
+                                <ul>
+                                    <li>Basit Paketteki Tüm Özellikler</li>
+                                    <li>Anti Virüs Taramalarını %100 Atlatma</li>
+                                    <li>İleri Düzey Kalıcılık (Sıfırlama işlemine rağmen)</li>
+                                    <li>Hedef Cihazda Kalıcı Hasar Bırakma</li>
+                                    <li>Dijital Finansal Varlıklarına Müdahale (Bankacılık & Kripto vb.)</li>  
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Paket 3 -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="pricing-card" onclick="window.location.href='login.html';">
+                                <h3><a class="text-white">Kurumsal Paket (Kurumsal Varlıklara Yönelik Saldırılar)</a></h3>
+                                <div class="price"><a class="text-green">$3.000</a></div>
+                                <ul>
+                                    <li>Diğer Paketlerdeki Tüm Özellikler</li>
+                                    <li>Detaylı Raporlama ve Analiz (İstihbarat)</li>
+                                    <li>Canlı Bilgisayar Korsanı Desteği</li>
+                                    <li>Kurumun Dijital Varlıklarını Çökertme</li>
+                                    <li>Kurumun WEB Varlıklarında Admin Oturumu Elde Etme</li>
+                                    <li>Uzaktan Kumandalı Patlayıcı Temini</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/countdown.js"></script>
+        <script src="js/init.js"></script>
+
+        <script>
+            // Aşağı kaydırma fonksiyonu
+            document.getElementById('scrollDown').addEventListener('click', function() {
+                document.getElementById('pricingSection').scrollIntoView({ behavior: 'smooth' });
+            });
+        </script>
+
+    </body>
+</html>

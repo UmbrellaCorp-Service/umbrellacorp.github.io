@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Umbrella _Corp</title>
+
+        <!-- CSS FILES -->                
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;1,200&family=Unbounded:wght@400;700&display=swap" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+        <link href="css/tooplate-kool-form-pack.css" rel="stylesheet">
+        
+        <style>
+            .hero-section h1 {
+                font-size: 2.5rem;
+                margin-bottom: 1rem;
+            }
+
+            .hero-section .intro-text {
+                font-size: 1.2rem;
+                color: #ffffff;
+                max-width: 600px;
+                margin: 0 auto;
+                text-align: center;
+                line-height: 1.6;
+            }
+
+            .how-we-do-section {
+                padding: 60px 0;
+                background-color: #1a1a1a;
+                color: #ffffff;
+            }
+
+            .how-we-do-section h2 {
+                font-size: 2rem;
+                text-align: center;
+                margin-bottom: 40px;
+            }
+
+            .step-card {
+                background-color: #2a2a2a;
+                border-radius: 10px;
+                padding: 20px;
+                margin-bottom: 30px;
+                transition: transform 0.3s ease;
+            }
+
+            .step-card:hover {
+                transform: translateY(-10px);
+            }
+
+            .step-card h3 {
+                font-size: 1.5rem;
+                margin-bottom: 15px;
+                color: #ffffff;
+            }
+
+            .step-card p {
+                font-size: 1rem;
+                color: #cccccc;
+            }
+        </style>
+    </head>
+    
+    <body>
+
+        <main>
+
+            <header class="site-header">
+                <div class="container">
+                    <div class="row justify-content-between">
+
+                        <div class="col-lg-12 col-12 d-flex align-items-center">
+                            <a class="site-header-text d-flex justify-content-center align-items-center me-auto" href="index.html">
+                                <i class="bi-box"></i>
+                                <span>
+                                    UMBRELLA _CORP
+                                </span>
+                            </a>
+
+                            <a class="bi-list offcanvas-icon" data-bs-toggle="offcanvas" href="#offcanvasMenu" role="button" aria-controls="offcanvasMenu"></a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+
+            <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">                
+                <div class="offcanvas-header">                    
+                    <button type="button" class="btn-close ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                
+                <div class="offcanvas-body d-flex flex-column justify-content-center align-items-center">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="login.html">Kirala!</a>
+                            </li>
+                            
+                            <li>
+                                <a href="servicesinfo.html">Paketlerimiz</a>
+                            </li>
+
+                            <li>
+                                <a href="lord.html">Ekip Liderlerimiz</a>
+                            </li>
+
+                            <li>
+                                <a href="services.html">Hizmetlerimiz</a>
+                            </li>
+
+                            <li>
+                                <a href="how.html">Nasıl Yapıyoruz?</a>
+                            </li>
+
+                            <li>
+                                <a href="contact.html">İletişim</a>
+                            </li>
+                            
+                            <li>
+                                <a href="livechat.html">Canlı Sohbet</a>
+                            </li>
+                            
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="subscribeModal" tabindex="-1" aria-labelledby="subscribeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+
+                        <div class="modal-body">
+                            <form action="#" method="get" class="custom-form mt-lg-4 mt-2" role="form">
+                                <h2 class="modal-title" id="subscribeModalLabel">Stay up to date</h2>
+                                <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="your@email.com" required="">
+                                <button type="submit" class="form-control">Notify</button>
+                            </form>
+                        </div>
+
+                        <div class="modal-footer justify-content-center">
+                            <p>By signing up, you agree to our Privacy Notice</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-12 mx-auto">
+                            <h1 class="text-white mt-2 mb-4 pb-2">
+                                Nasıl Yapıyoruz?
+                            </h1>
+
+                            <div class="intro-text">
+                                <p>
+                                    UMBRELLA CORP olarak, dijital korsanlık dünyasında en gelişmiş teknikleri kullanarak müşterilerimize özel çözümler sunuyoruz. İşte hizmetlerimizi nasıl gerçekleştirdiğimizin adım adım süreci:
+                                    <a class="text-blue">AŞAĞI KAYDIRIN:</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-wrap">
+                    <video autoplay="" loop="" muted="" class="custom-video" poster="">
+                        <source src="videos/video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </section>
+
+
+            <!-- Nasıl Yapıyoruz? Bölümü -->
+            <section class="how-we-do-section">
+                <div class="container">
+                    <h2>Nasıl Yapıyoruz?</h2>
+
+                    <div class="row">
+                        <!-- Adım 1 -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="step-card">
+                                <h3>1. İhtiyaç Analizi ve Planlama</h3>
+                                <p>
+                                    Müşterilerimizle detaylı bir görüşme yaparak ihtiyaçlarını ve hedeflerini anlıyor, proje kapsamını belirliyoruz.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Adım 2 -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="step-card">
+                                <h3>2. Bilgi Toplama</h3>
+                                <p>
+                                    Hedef sistem hakkında açık kaynaklardan ve aktif tarama yöntemleriyle bilgi topluyoruz.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Adım 3 -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="step-card">
+                                <h3>3. Zafiyet Tarama</h3>
+                                <p>
+                                    Otomatize araçlar ve manuel kontrollerle sistemdeki açıkları tespit ediyoruz.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Adım 4 -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="step-card">
+                                <h3>4. Sızma Testi</h3>
+                                <p>
+                                    Tespit edilen açıkları kullanarak sistemlere sızma denemeleri yapıyor ve yetki yükseltme teknikleri uyguluyoruz.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Adım 5 -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="step-card">
+                                <h3>5. Raporlama ve Analiz</h3>
+                                <p>
+                                    Bulguları detaylı bir rapor halinde sunarak, daha önce belirlemiş olduğunuz iletişim adresinize iletiyoruz.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Adım 6 -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="step-card">
+                                <h3>6. Arka Kapı Açıyoruz</h3>
+                                <p>
+                                    Hedeflere her zaman ulaşmanız için sistemde veya kişilerde Arka Kapı açıyoruz.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/countdown.js"></script>
+        <script src="js/init.js"></script>
+
+    </body>
+</html>

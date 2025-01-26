@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Umbrella Corp - Ödeme</title>
+
+        <!-- CSS FILES -->                
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;1,200&family=Unbounded:wght@400;700&display=swap" rel="stylesheet">
+        
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+        <link href="css/tooplate-kool-form-pack.css" rel="stylesheet">
+        
+        <style>
+            .hero-section h1 {
+                font-size: 2.5rem;
+                margin-bottom: 1rem;
+            }
+
+            .hero-section .intro-text {
+                font-size: 1.2rem;
+                color: #ffffff;
+                max-width: 600px;
+                margin: 0 auto;
+                text-align: center;
+                line-height: 1.6;
+            }
+
+            .monero-payment {
+                background: rgba(255, 255, 255, 0.1);
+                padding: 20px;
+                border-radius: 10px;
+                margin-top: 2rem;
+                text-align: center;
+            }
+
+            .monero-payment svg {
+                width: 50px;
+                height: 50px;
+                margin-bottom: 10px;
+            }
+
+            .monero-payment .monero-address {
+                font-family: monospace;
+                font-size: 1rem;
+                color: #ffffff;
+                word-break: break-all;
+                margin-top: 10px;
+            }
+
+            .monero-payment .payment-info {
+                font-size: 1rem;
+                color: #ffffff;
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+    
+    <body>
+
+        <main>
+
+            <header class="site-header">
+                <div class="container">
+                    <div class="row justify-content-between">
+
+                        <div class="col-lg-12 col-12 d-flex align-items-center">
+                            <a class="site-header-text d-flex justify-content-center align-items-center me-auto" href="index.html">
+                                <i class="bi-box"></i>
+
+                                <span>
+                                    UMBRELLA _CORP
+                                </span>
+                            </a>
+
+                            <a class="bi-list offcanvas-icon" data-bs-toggle="offcanvas" href="#offcanvasMenu" role="button" aria-controls="offcanvasMenu"></a>
+
+                        </div>
+
+                    </div>
+                </div>
+            </header>
+
+
+            <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">                
+                <div class="offcanvas-header">                    
+                    <button type="button" class="btn-close ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                
+                <div class="offcanvas-body d-flex flex-column justify-content-center align-items-center">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="login.html">Kirala!</a>
+                            </li>
+                            
+                            <li>
+                                <a href="servicesinfo.html">Paketlerimiz</a>
+                            </li>
+
+                            <li>
+                                <a href="lord.html">Ekip Liderlerimiz</a>
+                            </li>
+
+                            <li>
+                                <a href="services.html">Hizmetlerimiz</a>
+                            </li>
+
+                            <li>
+                                <a href="how.html">Nasıl Yapıyoruz?</a>
+                            </li>
+
+                            <li>
+                                <a href="contact.html">İletişim</a>
+                            </li>
+                            
+                            <li>
+                                <a href="livechat.html">Canlı Sohbet</a>
+                            </li>
+                            
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+            <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-12 mx-auto">
+
+                            <h1 class="text-white mt-2 mb-4 pb-2">
+                            </h1>
+
+                            <div class="intro-text">
+                                <p>
+                                    UMBRELLA CORP hizmetlerimizden yararlanmak için ödemenizi Monero (XMR) ile yapabilirsiniz. Aşağıda belirtilen Monero adresine ödemenizi gerçekleştirdikten sonra, muhasebe ekibimiz tarafından
+                                    teyit edilecektir. BİLGİLENDİRME: İşlem öncesi %50, işlem sonrası geri kalan ödemeyi alıyoruz. Fiyatlandırma bilgisi için <a href="servicesinfo.html">buraya</a> bakınız.
+                                </p>
+                            </div>
+
+                            <!-- Monero Ödeme Bilgileri -->
+                            <div class="monero-payment">
+                                <!-- Monero SVG Logosu -->
+                                <svg xmlns="monero.svg" viewBox="0 0 64 64">
+                                    <circle cx="32" cy="32" r="32" fill="#FF6600"/>
+                                    <path d="M32 16l-8 8-8-8-8 8v16l8 8 8-8 8 8 8-8 8 8 8-8V24l-8-8-8 8-8-8z" fill="#FFF"/>
+                                </svg>
+
+                                <!-- Monero Adresi -->
+                                <div class="monero-address">
+                                    <a class="text-blue">8B6YBKkUXNxUjY6cWjJCD8YRRvn4kZG1dBmjrxLzxE2uVUyfZfvFuYU64M62RpJxqMcDi2uHevbyCfSy9tMAChTH4Hs2NsA</a>
+                                </div>
+
+                                <!-- Ödeme Bilgisi -->
+                                <div class="payment-info">
+                                    Ödemenizi yaptıktan sonra, işlem kimliğini (TXID) bize iletmeyi unutmayın. Ödeme onayı genellikle 10-15 dakika içinde gerçekleşir.
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-wrap">
+                    <video autoplay="" loop="" muted="" class="custom-video" poster="">
+                        <source src="videos/video.mp4" type="video/mp4">
+
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </section>
+        </main>
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/countdown.js"></script>
+        <script src="js/init.js"></script>
+
+    </body>
+</html>
